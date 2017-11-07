@@ -1,1 +1,1 @@
-# JPAPractice
+# JPA Practice
