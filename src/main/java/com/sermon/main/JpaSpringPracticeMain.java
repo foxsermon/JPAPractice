@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.sermon.model.Orden;
 import com.sermon.service.OrdenManager;
 
-public class JpaPracticeMain {
+public class JpaSpringPracticeMain {
 
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("spring.xml");

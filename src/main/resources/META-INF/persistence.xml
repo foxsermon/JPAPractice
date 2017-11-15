@@ -7,12 +7,20 @@
 
   <persistence-unit name="testPU" transaction-type="RESOURCE_LOCAL">
     <class>com.sermon.model.Orden</class>
-    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <!--  Spring needs this provider -->
+    <!--  <provider>org.hibernate.ejb.HibernatePersistence</provider>--> 
     <!-- 
     <properties>
         <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
     </properties>
     -->
+	<!-- Properties used for JPA, no Spring at all-->
+     <properties>
+        <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+        <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/hpractice"/>
+        <property name="javax.persistence.jdbc.user" value="root"/>
+        <property name="javax.persistence.jdbc.password" value="test123"/>
+     </properties>
   </persistence-unit>
 
 </persistence>

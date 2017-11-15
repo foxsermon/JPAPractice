@@ -35,4 +35,8 @@ public class Orden implements Serializable {
 	public void setCreated(Timestamp created) {
 		this.created = created;
 	}
+	@Override
+	public String toString() {
+		return "Orden [id=" + id + ", description=" + description + ", created=" + created + "]";
+	}
 }
